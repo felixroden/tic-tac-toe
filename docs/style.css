@@ -77,3 +77,8 @@
     background-color: lightgreen;
     font-weight: bold;
 }
+
+.square:focus:not(:focus-visible),
+.reset-button:focus:not(:focus-visible) {
+  outline: none;
+}
