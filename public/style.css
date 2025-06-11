@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.square:nth-child(4),
+.square:nth-child(5),
+.square:nth-child(6) {
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.square:nth-child(2),
+.square:nth-child(5),
+.square:nth-child(8) {
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+}
+
+#title {
+    font-size: 3rem;
+}
+
+#playerTurnLabel {
+    font-size: 1.5rem;
+}
+
+#playerTurn {
+    font-weight: bold;
+}
+
+.board {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+     /*gap: 5px;*/
+}
+
+#resetButton {
+    margin-top: 40px;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#resetButton:hover {
+    background-color: #ffb74b6a;
+}
+
+#resetButton:active {
+    box-shadow: 0 0 0;
+    transform: translate(2px, 2px);
+}
+
+.win {
+    background-color: lightgreen;
+    font-weight: bold;
+}
