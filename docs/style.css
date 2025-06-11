@@ -79,7 +79,7 @@
 }
 
 .square,
-.resetButton {
+#resetButton {
   -webkit-tap-highlight-color: transparent;
   outline: none;
 }
