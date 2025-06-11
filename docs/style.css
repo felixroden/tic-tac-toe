@@ -78,7 +78,8 @@
     font-weight: bold;
 }
 
-.square:focus:not(:focus-visible),
-.reset-button:focus:not(:focus-visible) {
+.square,
+.reset-button {
+  -webkit-tap-highlight-color: transparent;
   outline: none;
 }
